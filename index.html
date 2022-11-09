@@ -1,37 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" sizes="40x40" href="./images/codeFavicon.png" />
+        <link rel="stylesheet" href="dist/styles.css" />
+        <title>Order summary card</title>
+    </head>
+    <body>
+        <div class="card">
+            <img class="card__image" src="./images/illustration-hero.svg" alt="Illustration of a girl with headphones dancing in the night " />
+            <div class="card__content">
+                <div class="card__title">Order Summary</div>
+                <p class="card__body">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+                <div class="card__pricing">
+                    <img class="card__icon" src="./images/icon-music.svg" alt="Music Note Icon" />
+                    <span class="card__plan"><strong>Annual Plan</strong><br />$59.99/year</span>
+                    <a class="link card__pricing-change" href="#">change</a>
+                </div>
+                <a class="btn card__btn" href="#">Proceed to Payment</a>
+                <a class="link card__cancel" href="#">Cancel Order</a>
+            </div>
+        </div>
+    </body>
 </html>
