@@ -5,14 +5,25 @@
     border-radius: 11px;
     background-color: $babyBlue;
     padding: 1em;
+    margin-bottom: 1.5em;
+
+    @include breakpoints-up(med) {
+        padding: 1.5625em 1.5em;
+        margin-bottom: 2em;
+    }
 
     &__icon {
-        width: 48px;
-        margin-right: 20px;
+        width: 3rem;
+        margin-right: 1.25em;
     }
 
     &__plan {
         font-weight: 500;
+
+        @include breakpoints-up(med) {
+            line-height: 1.6;
+            font-size: 16px;
+        }
     }
 
     &__change {
@@ -24,6 +35,10 @@
         border-color: $btnBlue;
         line-height: 11px;
         transition: color 100ms ease-in-out;
+
+        @include breakpoints-up(med) {
+            font-size: 14px;
+        }
     }
 
     &__change:hover,

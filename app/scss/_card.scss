@@ -1,6 +1,6 @@
 .card {
     background-color: #fff;
-    width: 90%;
+    width: 87%;
     max-width: 450px;
     border-radius: 20px;
     overflow: hidden;
@@ -8,19 +8,25 @@
     &__image {
         max-height: 220px;
     }
+
     &__content {
         align-items: center;
         padding: 2em 1.5em;
-    }
 
-    &__content > h1 ~ :not(:last-child) {
-        margin-bottom: 24px;
+        @include breakpoints-up(med) {
+            padding: 2.8125em 3em 3em 3em;
+        }
     }
 
     &__title {
         margin: 0;
-        margin-bottom: 16px;
+        margin-bottom: 1em;
         text-align: center;
+
+        @include breakpoints-up(med) {
+            font-size: 1.75rem;
+            margin-bottom: 1.0625em;
+        }
     }
 
     &__body {
@@ -28,18 +34,30 @@
         font-weight: 500;
         text-align: center;
         line-height: 1.6;
-        padding: 0 1em;
+        padding: 0 0.5em;
+        margin-bottom: 2em;
+
+        @include breakpoints-up(med) {
+            margin-bottom: 1.25em;
+            padding: 0 1.5em;
+            font-size: 1rem;
+        }
     }
 
     &__btn {
         display: block;
         text-align: center;
-        margin-bottom: 24px;
+        margin-bottom: 1.5em;
         color: white;
         background-color: $btnBlue;
         border-radius: 11px;
         box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
         transition: background-color 200ms ease-in-out;
+
+        @include breakpoints-up(med) {
+            // padding: 1em 6.375em;
+            margin-bottom: 2em;
+        }
     }
 
     &__btn:hover,
