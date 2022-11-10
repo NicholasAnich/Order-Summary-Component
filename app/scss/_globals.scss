@@ -52,4 +52,8 @@ strong {
     color: $darkBlue;
     font-size: 0.875rem;
     font-weight: 900;
+
+    @include breakpoints-up(med) {
+        font-size: 16px;
+    }
 }

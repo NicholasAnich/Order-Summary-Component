@@ -51,6 +51,11 @@ strong {
   font-size: 0.875rem;
   font-weight: 900;
 }
+@media (min-width: 26.5625em) {
+  strong {
+    font-size: 16px;
+  }
+}
 
 .card {
   background-color: #fff;
@@ -102,6 +107,7 @@ strong {
   display: block;
   text-align: center;
   margin-bottom: 1.5em;
+  font-weight: 900;
   color: white;
   background-color: #382ae1;
   border-radius: 11px;
