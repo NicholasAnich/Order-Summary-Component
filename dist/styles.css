@@ -17,10 +17,11 @@ body {
   margin: 0;
   background-image: url("../../images/pattern-background-mobile.svg");
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
 }
 @media (min-width: 26.5625em) {
   body {
+    font-size: 16px;
     background-image: url("../../images/pattern-background-desktop.svg");
     background-size: auto;
   }
@@ -67,13 +68,19 @@ strong {
 }
 @media (min-width: 26.5625em) {
   .card__content {
-    padding: 2.8125em 3em;
+    padding: 2.8125em 3em 3em 3em;
   }
 }
 .card__title {
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 1em;
   text-align: center;
+}
+@media (min-width: 26.5625em) {
+  .card__title {
+    font-size: 1.75rem;
+    margin-bottom: 1.0625em;
+  }
 }
 .card__body {
   margin-top: 0;
@@ -86,6 +93,8 @@ strong {
 @media (min-width: 26.5625em) {
   .card__body {
     margin-bottom: 1.25em;
+    padding: 0 1.5em;
+    font-size: 1rem;
   }
 }
 .card__btn {
@@ -97,6 +106,11 @@ strong {
   border-radius: 11px;
   box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
   transition: background-color 200ms ease-in-out;
+}
+@media (min-width: 26.5625em) {
+  .card__btn {
+    margin-bottom: 2em;
+  }
 }
 .card__btn:hover, .card__btn:focus {
   background-color: #766cf1;
@@ -119,11 +133,12 @@ strong {
   border-radius: 11px;
   background-color: #f7f9ff;
   padding: 1em;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
 }
 @media (min-width: 26.5625em) {
   .pricing {
     padding: 1.5625em 1.5em;
+    margin-bottom: 2em;
   }
 }
 .pricing__icon {
@@ -132,6 +147,12 @@ strong {
 }
 .pricing__plan {
   font-weight: 500;
+}
+@media (min-width: 26.5625em) {
+  .pricing__plan {
+    line-height: 1.6;
+    font-size: 16px;
+  }
 }
 .pricing__change {
   font-size: 13px;
@@ -142,6 +163,11 @@ strong {
   border-color: #382ae1;
   line-height: 11px;
   transition: color 100ms ease-in-out;
+}
+@media (min-width: 26.5625em) {
+  .pricing__change {
+    font-size: 14px;
+  }
 }
 .pricing__change:hover, .pricing__change:focus {
   border-bottom: none;

@@ -14,22 +14,19 @@
         padding: 2em 1.5em;
 
         @include breakpoints-up(med) {
-            padding: 2.8125em 3em;
+            padding: 2.8125em 3em 3em 3em;
         }
     }
 
-    // &__content > h1 ~ :not(:last-child) {
-    //     margin-bottom: 1.5em;
-
-    //     @include breakpoints-up(med) {
-    //         margin-bottom: 2em;
-    //     }
-    // }
-
     &__title {
         margin: 0;
-        margin-bottom: 16px;
+        margin-bottom: 1em;
         text-align: center;
+
+        @include breakpoints-up(med) {
+            font-size: 1.75rem;
+            margin-bottom: 1.0625em;
+        }
     }
 
     &__body {
@@ -38,11 +35,12 @@
         text-align: center;
         line-height: 1.6;
         padding: 0 0.5em;
-        // border: 1px solid #000;
         margin-bottom: 2em;
 
         @include breakpoints-up(med) {
             margin-bottom: 1.25em;
+            padding: 0 1.5em;
+            font-size: 1rem;
         }
     }
 
@@ -58,6 +56,7 @@
 
         @include breakpoints-up(med) {
             // padding: 1em 6.375em;
+            margin-bottom: 2em;
         }
     }
 
