@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 15px;
+    font-family: "Red Hat Display", sans-serif;
+    background-color: $paleBlue;
+    color: $fontBlue;
+    margin: 0;
+
+    background-image: url("../../images/pattern-background-mobile.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    padding: 1em 2em;
+}
+
+//Typography
+h1 {
+    font-size: 22px;
+    font-weight: 900;
+    color: $darkBlue;
+}
+
+strong {
+    color: $darkBlue;
+    font-size: 14px;
+}

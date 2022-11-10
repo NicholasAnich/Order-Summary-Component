@@ -1,0 +1,34 @@
+.pricing {
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    border-radius: 11px;
+    background-color: $babyBlue;
+    padding: 1em;
+
+    &__icon {
+        width: 48px;
+        margin-right: 20px;
+    }
+
+    &__plan {
+        font-weight: 500;
+    }
+
+    &__change {
+        font-size: 13px;
+        font-weight: 700;
+        margin-left: auto;
+        color: $btnBlue;
+        border-bottom: 1px solid #000;
+        border-color: $btnBlue;
+        line-height: 11px;
+        transition: color 100ms ease-in-out;
+    }
+
+    &__change:hover,
+    &__change:focus {
+        border-bottom: none;
+        color: $hoverPurple;
+    }
+}
