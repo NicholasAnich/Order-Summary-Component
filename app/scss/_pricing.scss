@@ -5,10 +5,15 @@
     border-radius: 11px;
     background-color: $babyBlue;
     padding: 1em;
+    margin-bottom: 2em;
+
+    @include breakpoints-up(med) {
+        padding: 1.5625em 1.5em;
+    }
 
     &__icon {
-        width: 48px;
-        margin-right: 20px;
+        width: 3rem;
+        margin-right: 1.25em;
     }
 
     &__plan {

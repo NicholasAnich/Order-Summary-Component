@@ -19,6 +19,12 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
 }
+@media (min-width: 26.5625em) {
+  body {
+    background-image: url("../../images/pattern-background-desktop.svg");
+    background-size: auto;
+  }
+}
 
 img {
   width: 100%;
@@ -34,19 +40,20 @@ a {
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 900;
   color: #1f2f56;
 }
 
 strong {
   color: #1f2f56;
-  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 900;
 }
 
 .card {
   background-color: #fff;
-  width: 90%;
+  width: 87%;
   max-width: 450px;
   border-radius: 20px;
   overflow: hidden;
@@ -58,8 +65,10 @@ strong {
   align-items: center;
   padding: 2em 1.5em;
 }
-.card__content > h1 ~ :not(:last-child) {
-  margin-bottom: 24px;
+@media (min-width: 26.5625em) {
+  .card__content {
+    padding: 2.8125em 3em;
+  }
 }
 .card__title {
   margin: 0;
@@ -71,12 +80,18 @@ strong {
   font-weight: 500;
   text-align: center;
   line-height: 1.6;
-  padding: 0 1em;
+  padding: 0 0.5em;
+  margin-bottom: 2em;
+}
+@media (min-width: 26.5625em) {
+  .card__body {
+    margin-bottom: 1.25em;
+  }
 }
 .card__btn {
   display: block;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 1.5em;
   color: white;
   background-color: #382ae1;
   border-radius: 11px;
@@ -104,10 +119,16 @@ strong {
   border-radius: 11px;
   background-color: #f7f9ff;
   padding: 1em;
+  margin-bottom: 2em;
+}
+@media (min-width: 26.5625em) {
+  .pricing {
+    padding: 1.5625em 1.5em;
+  }
 }
 .pricing__icon {
-  width: 48px;
-  margin-right: 20px;
+  width: 3rem;
+  margin-right: 1.25em;
 }
 .pricing__plan {
   font-weight: 500;
