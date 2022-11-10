@@ -4,6 +4,7 @@
     max-width: 450px;
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
 
     &__image {
         max-height: 220px;
@@ -12,7 +13,6 @@
     &__content {
         align-items: center;
         padding: 2em 1.5em;
-
         @include breakpoints-up(med) {
             padding: 2.8125em 3em 3em 3em;
         }
@@ -55,7 +55,6 @@
         transition: background-color 200ms ease-in-out;
 
         @include breakpoints-up(med) {
-            // padding: 1em 6.375em;
             margin-bottom: 2em;
         }
     }
