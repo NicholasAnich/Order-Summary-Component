@@ -80,7 +80,7 @@ strong {
 @media (min-width: 26.5625em) {
   .card__title {
     font-size: 1.75rem;
-    margin-bottom: 1.0625em;
+    margin-bottom: 0.607em;
   }
 }
 .card__body {
